@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+--soft-red: hsl(10, 79%, 65%);
+--cyan: hsl(186, 34%, 60%);
+--dark-brown: hsl(25, 47%, 15%);
+--medium-brown: hsl(28, 10%, 53%);
+--cream: hsl(27, 66%, 92%);
+--very-pale-orange: hsl(33, 100%, 98%);
+}
+
+#root {
+    width: 27em;
+}
+
+* {
+    /* outline: 1px solid black; */
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    color: white;
+    background-color: var(--soft-red);
+    border-radius: 0.5em;
+}
+
+.balanceText {
+    margin: 10px;
+}
+
+.balanceFigure {
+    margin: 10px;
+}
+
+.bottomBar {
+    background-color: var(--very-pale-orange);
+    padding: 0.2em 1em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+}
+
+.charts{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+
+.bar {
+    height: 3em;
+    width: 1em;
+    background-color: black;
+}
+
+hr {
+    width: inherit
+}
+
+.totalContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+}
+
+.thisMonth .totalAmount  {
+    font-size: 1.5em;
+}
+
+.lastMonth {
+    align-self: flex-end;
+    font-size: 12px;
+}
